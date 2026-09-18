@@ -1,5 +1,4 @@
 package id.ac.polinema.oop;
-
 /**
  * Student class.
  *
@@ -10,7 +9,9 @@ package id.ac.polinema.oop;
 public class Student {
 
     // TODO: add fields: studentId (String), name (String), gpa (double)
-
+    private String studentId;
+    private String name;
+    private double gpa;
     /**
      * Student constructor.
      *
@@ -19,22 +20,24 @@ public class Student {
      * @param gpa       Grade Point Average (0.0 - 4.0)
      */
     public Student(String studentId, String name, double gpa) {
-        // TODO: store parameters into fields
+        this.studentId = studentId;
+        this.name = name;
+        this.gpa = gpa;
         throw new UnsupportedOperationException("Not implemented yet");
     }
 
     public String getStudentId() {
-        // TODO: return studentId
+        return studentId;
         throw new UnsupportedOperationException("Not implemented yet");
     }
 
     public String getName() {
-        // TODO: return name
+        return name;
         throw new UnsupportedOperationException("Not implemented yet");
     }
 
     public double getGpa() {
-        // TODO: return gpa
+        return gpa;
         throw new UnsupportedOperationException("Not implemented yet");
     }
 
@@ -47,6 +50,13 @@ public class Student {
      * @return graduation predicate
      */
     public String getPredicate() {
+        if (gpa >= 3.5) {
+            return "Cumlaude";
+        } else if (gpa >= 3.0) {
+            return "Very Satisfactory";
+        } else {
+            return " Satisfactory";
+        }
         // TODO: implement the predicate logic per the rules above
         throw new UnsupportedOperationException("Not implemented yet");
     }
