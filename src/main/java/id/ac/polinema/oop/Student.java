@@ -48,7 +48,7 @@ public class Student {
     public String getPredicate() {
         if (gpa >= 3.5) {
             return "Cum laude";
-        } else if (gpa >= 3.0 && gpa < 3.5) {
+        } else if (gpa < 3.5 && gpa >= 3.0) {
             return "Very Satisfactory";
         } else {
             return " Satisfactory";
