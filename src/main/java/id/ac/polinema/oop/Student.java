@@ -23,7 +23,6 @@ public class Student {
         this.studentId = studentId;
         this.name = name;
         this.gpa = gpa;
-        throw new UnsupportedOperationException("Not implemented yet");
     }
 
     public String getStudentId() {
@@ -48,8 +47,8 @@ public class Student {
      */
     public String getPredicate() {
         if (gpa >= 3.5) {
-            return "Cumlaude";
-        } else if (gpa >= 3.0) {
+            return "Cum laude";
+        } else if (gpa >= 3.0 && gpa < 3.5) {
             return "Very Satisfactory";
         } else {
             return " Satisfactory";
