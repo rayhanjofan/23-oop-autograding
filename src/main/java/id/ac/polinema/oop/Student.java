@@ -28,17 +28,14 @@ public class Student {
 
     public String getStudentId() {
         return studentId;
-        throw new UnsupportedOperationException("Not implemented yet");
     }
 
     public String getName() {
         return name;
-        throw new UnsupportedOperationException("Not implemented yet");
     }
 
     public double getGpa() {
         return gpa;
-        throw new UnsupportedOperationException("Not implemented yet");
     }
 
     /**
@@ -58,6 +55,5 @@ public class Student {
             return " Satisfactory";
         }
         // TODO: implement the predicate logic per the rules above
-        throw new UnsupportedOperationException("Not implemented yet");
     }
 }
