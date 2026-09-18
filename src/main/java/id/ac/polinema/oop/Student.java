@@ -1,4 +1,5 @@
 package id.ac.polinema.oop;
+
 /**
  * Student class.
  *
@@ -12,6 +13,7 @@ public class Student {
     private String studentId;
     private String name;
     private double gpa;
+
     /**
      * Student constructor.
      *
@@ -39,20 +41,20 @@ public class Student {
 
     /**
      * Determines the graduation predicate based on GPA:
-     * - gpa >= 3.5           -> "Cum Laude"
-     * - 3.0 <= gpa < 3.5     -> "Very Satisfactory"
-     * - gpa < 3.0            -> "Satisfactory"
+     * - gpa >= 3.5 -> "Cum Laude"
+     * - 3.0 <= gpa < 3.5 -> "Very Satisfactory"
+     * - gpa < 3.0 -> "Satisfactory"
      *
      * @return graduation predicate
      */
     public String getPredicate() {
         if (gpa >= 3.5) {
-            return "Cum laude";
-        } else if (gpa < 3.5 && gpa >= 3.0) {
+            return "Cum Laude";
+        } else if (gpa >= 3.0) {
             return "Very Satisfactory";
         } else {
-            return " Satisfactory";
+            return "Satisfactory";
         }
-        // TODO: implement the predicate logic per the rules above
+        // TODO: implement the predicate logic per the rules abov
     }
 }
